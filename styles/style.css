@@ -1,0 +1,145 @@
+body {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px auto;
+	background-color: rgb(139, 80, 189);
+}
+.header {
+	display: flex;
+	justify-content: center;
+	font-size: 18pt;
+	color: #00658c;
+	font-style: italic;
+	font-weight: bold;
+}
+.form_box{
+	width: 80%;
+	max-width: 80%;
+	min-width: 80%;
+}
+#frmEnquiry {
+	border-top: #F0F0F0 2px solid;
+	background-color: rgb(242, 242, 242);
+	border-radius: 10px;
+	padding: 15px 30px;
+}
+
+#frmEnquiry div {
+	margin-bottom: 20px;
+}
+
+#frmEnquiry div label {
+	margin-left: 5px
+}
+
+.demoInputBox {
+	padding: 10px;
+	border: #F0F0F0 1px solid;
+	border-radius: 10px;
+	background-color: #FFF;
+	width: 100%;
+}
+
+.demoInputBox:focus {
+	outline: #71155e !important;
+	border: #71155e 1px solid !important;
+}
+#content{
+	max-width: 1077px;
+	max-height: 108px;
+}
+
+.error {
+	background-color: #FF6600;
+	border: #AA4502 1px solid;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	border-radius: 4px;
+}
+
+.success {
+	background-color: #9fd2a1;
+	border: #91bf93 1px solid;
+	padding: 5px 10px;
+	color: #3d503d;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 0.9em;
+}
+
+.info {
+	font-size: .8em;
+	color: #FF6600;
+	letter-spacing: 2px;
+	padding-left: 5px;
+}
+
+.btnAction {
+	background-color: #263327;
+	border: 0;
+	padding: 10px 40px;
+	color: #FFF;
+	border: #F0F0F0 1px solid;
+	border-radius: 4px;
+	cursor:pointer;
+}
+.btnAction:focus {
+	outline:none;
+}
+.invalid {
+	background: #fbf2f2;
+	border: #e8e0e0 1px solid;
+}
+
+.button {
+	position: relative;
+	padding: 8px 16px;
+	background: #009579;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.button:active {
+	background: #007a63;
+}
+
+.button__text {
+	font: bold 20px "Quicksand", san-serif;
+	color: #ffffff;
+	transition: all 0.2s;
+}
+
+.button--loading .button__text {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.button--loading::after {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 4px solid transparent;
+	border-top-color: #ffffff;
+	border-radius: 50%;
+	animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+	from {
+		transform: rotate(0turn);
+	}
+
+	to {
+		transform: rotate(1turn);
+	}
+}
